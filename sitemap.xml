@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://ioos.github.io/configuration-management/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ioos.github.io/configuration-management/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ioos.github.io/configuration-management/change_management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ioos.github.io/configuration-management/config_management_plan/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ioos.github.io/configuration-management/cmp_artifacts/</loc>
+  </url>
+  
+</urlset>

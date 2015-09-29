@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      IOOS DMAC Configuration Management (CM) Plan &middot; IOOS DMAC Configuration Management
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/poole.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/syntax.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ioos.github.io/configuration-management/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://ioos.github.io/configuration-management/assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ioos.github.io/configuration-management/atom.xml">
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p align="center">&middot; <a href="http://ioos.github.io/" target="_blank">IOOS GitHub Pages</a> &middot; <br>
+	a collection of IOOS documentation and software</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="http://ioos.github.io/configuration-management/">Home</a>
+
+
+  <div class="sidebar-item">
+    <p>Documents</p>
+  </div>
+
+<p style="text-align:right"> 
+    
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/about/">ABOUT: IOOS Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/change_management/">IOOS DMAC Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list  active " href="http://ioos.github.io/configuration-management/config_management_plan/">IOOS DMAC Configuration Management (CM) Plan</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/cmp_artifacts/">IOOS DMAC CMP Artifacts</a>
+      
+    
+</p>
+<p style="text-align:right">
+      
+</p>
+
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management">GitHub repository</a>
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management/archive/master.zip">Download ZIP</a>
+    <span class="sidebar-nav-item">Currently on master</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 1 U.S. IOOS. Rights reserved</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h2 class="masthead-title">
+		  <a href="http://ioos.github.io/configuration-management/" title="Home"> IOOS DMAC Configuration Management &middot; 
+		  <small>Change Process, Plan, Procedures</small>
+		  <img src="http://ioos.github.io/configuration-management/images/ioos_blue2.png" alt="Smiley face" align="right" /></a>
+		  </h2>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">IOOS DMAC Configuration Management (CM) Plan</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#purpose:aa2af3cf6dbffe932db49cb491ac453b">Purpose</a></li>
+<li><a href="#scope:aa2af3cf6dbffe932db49cb491ac453b">Scope</a></li>
+<li><a href="#responsibilities-and-authority:aa2af3cf6dbffe932db49cb491ac453b">Responsibilities and Authority</a></li>
+<li><a href="#configuration-management-process:aa2af3cf6dbffe932db49cb491ac453b">Configuration Management Process</a>
+<ul>
+<li><a href="#configuration-management-artifacts-current-recommendations-and-configuration-management-baseline:aa2af3cf6dbffe932db49cb491ac453b">Configuration Management Artifacts: Current Recommendations and Configuration Management Baseline</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+<p><em>This Configuration Management Plan (CM Plan) is a tool used to establish the overall approach for the Configuration Management Process requirements for the DMAC implementation. The scope of this plan extends to software components of the DMAC infrastructure, and includes an accounting of deployed IOOS assets.  The CM Plan is a dynamic compound document, with a static part incorporated herein, and a dynamic part is published as a separate <a href="http://ioos.github.io/configuration-management/cmp_artifacts/">&ldquo;IOOS DMAC CMP Artifacts&rdquo;</a> document.</em></p>
+
+<h1 id="purpose:aa2af3cf6dbffe932db49cb491ac453b">Purpose</h1>
+
+<p>The purpose of this Configuration Management Plan is to describe the process by which IOOS will</p>
+
+<ul>
+<li><p>Define the software and standards versions recommended for deployment by data provider partners</p></li>
+
+<li><p>Identify the configuration of deployed IOOS DMAC components at given points in time</p></li>
+
+<li><p>Systematically communicate recommended changes to the configuration, and control the deployment of those changes</p></li>
+
+<li><p>Maintain the integrity and traceability of the configuration over time</p></li>
+
+<li><p>Provide an accounting of deployed IOOS assets, including services and datasets, over time</p></li>
+</ul>
+
+<p>The IOOS CM Plan is a living document that identifies CM roles and responsibilities, resources, and formal processes and procedures to ensure that all proposed changes to major DMAC components and applications are evaluated and approved before implementation.  This plan is essential for effective CM pertaining to activities such as system-wide upgrades, replacements, and deployments.  In addition, it is a key process for maintaining the appropriate level of information assurance for DMAC implementation.</p>
+
+<h1 id="scope:aa2af3cf6dbffe932db49cb491ac453b">Scope</h1>
+
+<p>The Configuration Management aspect of this plan covers specific components of the IOOS DMAC infrastructure, including:</p>
+
+<ol>
+<li><p>IOOS DMAC data server software packages (e.g. ncSOS, i52N)</p></li>
+
+<li><p>Standards adopted or recommended by IOOS DMAC (e.g. OGC SOS, THREDDS, CS/W)</p></li>
+</ol>
+
+<p>This plan also endeavors to maintain an accounting of deployed IOOS assets, such as data offerings from IOOS Data Providers (data providers include IOOS Regional Associations (RA’s), Federal partners (NDBC and CO-OPS) and IOOS Data Assembly Centers). Assets to be tracked include:</p>
+
+<ol>
+<li><p>Number of services</p></li>
+
+<li><p>Number of data sets</p></li>
+
+<li><p>Number of stations/platforms/sensors</p></li>
+</ol>
+
+<h1 id="responsibilities-and-authority:aa2af3cf6dbffe932db49cb491ac453b">Responsibilities and Authority</h1>
+
+<p>Establishment of this CM Plan is the responsibility of the IOOS Program Office, using inputs from stakeholders. Because IOOS is a community-based endeavor, and most data providers are grant recipients (rather than contractors), the IOOS Program Office does not have the authority to mandate, or prevent, changes to systems at data provider locations. It is up to the individual provider to determine when, and if, changes should be made. However, IOOS has made, and will continue to make, investments in software packages and tools to enhance the services provided by stakeholders and will make recommendations to data and service providers in an effort to enhance exposure and use of the data.</p>
+
+<h1 id="configuration-management-process:aa2af3cf6dbffe932db49cb491ac453b">Configuration Management Process</h1>
+
+<p>The diagram below illustrates the Configuration Management process.</p>
+
+<p><img src="http://ioos.github.io/configuration-management/images/process_small.png" alt="IOOS CM Process" />
+</p>
+
+<!-- <img src="http://ioos.github.io/configuration-management/images/process.png" style="width: 50%; height: 50%"/> -->
+
+<h2 id="configuration-management-artifacts-current-recommendations-and-configuration-management-baseline:aa2af3cf6dbffe932db49cb491ac453b">Configuration Management Artifacts: Current Recommendations and Configuration Management Baseline</h2>
+
+<p>This Configuration Management Plan is intended to be a fairly static description of the CM process. There are three related <a href="http://ioos.github.io/configuration-management/cmp_artifacts/">artifacts</a> published separately, which contain the configuration data and are intended to be references updated on a more dynamic basis.</p>
+
+<ol>
+<li><p><strong>Recommended DMAC Configuration</strong> - defines the specific software and/or standards versions that IOOS currently recommends for data provider deployments.</p></li>
+
+<li><p><strong>Configuration Baseline</strong> - tabulation of what is currently deployed at each data provider locations. This baseline is updated each time a data provider upgrades services.</p></li>
+
+<li><p><strong>Available Services and Datasets</strong> - contains a summary of the services and datasets available from each data provider at a given points in time.</p></li>
+</ol>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
+

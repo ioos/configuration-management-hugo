@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      IOOS DMAC Configuration Management Process &middot; IOOS DMAC Configuration Management
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/poole.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/syntax.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ioos.github.io/configuration-management/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://ioos.github.io/configuration-management/assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ioos.github.io/configuration-management/atom.xml">
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p align="center">&middot; <a href="http://ioos.github.io/" target="_blank">IOOS GitHub Pages</a> &middot; <br>
+	a collection of IOOS documentation and software</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="http://ioos.github.io/configuration-management/">Home</a>
+
+
+  <div class="sidebar-item">
+    <p>Documents</p>
+  </div>
+
+<p style="text-align:right"> 
+    
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/about/">ABOUT: IOOS Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list  active " href="http://ioos.github.io/configuration-management/change_management/">IOOS DMAC Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/config_management_plan/">IOOS DMAC Configuration Management (CM) Plan</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/cmp_artifacts/">IOOS DMAC CMP Artifacts</a>
+      
+    
+</p>
+<p style="text-align:right">
+      
+</p>
+
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management">GitHub repository</a>
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management/archive/master.zip">Download ZIP</a>
+    <span class="sidebar-nav-item">Currently on master</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 1 U.S. IOOS. Rights reserved</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h2 class="masthead-title">
+		  <a href="http://ioos.github.io/configuration-management/" title="Home"> IOOS DMAC Configuration Management &middot; 
+		  <small>Change Process, Plan, Procedures</small>
+		  <img src="http://ioos.github.io/configuration-management/images/ioos_blue2.png" alt="Smiley face" align="right" /></a>
+		  </h2>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">IOOS DMAC Configuration Management Process</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#overview:bda80b180ca52303bb2e248407e594d6">Overview</a></li>
+<li><a href="#scope:bda80b180ca52303bb2e248407e594d6">Scope</a></li>
+<li><a href="#roles:bda80b180ca52303bb2e248407e594d6">Roles</a></li>
+<li><a href="#change-management-process:bda80b180ca52303bb2e248407e594d6">Change Management Process</a></li>
+<li><a href="#components-under-dmac-change-management:bda80b180ca52303bb2e248407e594d6">Components Under DMAC Change Management</a>
+<ul>
+<li><a href="#software-applications-utilities-and-tools:bda80b180ca52303bb2e248407e594d6">Software - Applications, Utilities and Tools</a></li>
+<li><a href="#documents-and-specifications:bda80b180ca52303bb2e248407e594d6">Documents and Specifications</a></li>
+</ul></li>
+<li><a href="#terms-of-reference-for-components-under-change-management:bda80b180ca52303bb2e248407e594d6">Terms of Reference for Components Under Change Management</a>
+<ul>
+<li><a href="#ioos-data-catalog:bda80b180ca52303bb2e248407e594d6">IOOS Data Catalog</a>
+<ul>
+<li><a href="#roles-1:bda80b180ca52303bb2e248407e594d6">Roles</a></li>
+<li><a href="#required-tools-and-artifacts:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</a></li>
+</ul></li>
+<li><a href="#sos-reference-implementations-ncsos-i52n-sos:bda80b180ca52303bb2e248407e594d6">SOS Reference Implementations (ncSOS, i52N SOS)</a>
+<ul>
+<li><a href="#roles-2:bda80b180ca52303bb2e248407e594d6">Roles</a></li>
+<li><a href="#required-tools-and-artifacts-1:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</a></li>
+</ul></li>
+<li><a href="#encoding-templates:bda80b180ca52303bb2e248407e594d6">Encoding Templates</a>
+<ul>
+<li><a href="#roles-3:bda80b180ca52303bb2e248407e594d6">Roles</a></li>
+<li><a href="#required-tools-and-artifacts-2:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sources:bda80b180ca52303bb2e248407e594d6">Sources</a></li>
+<li><a href="#glossary:bda80b180ca52303bb2e248407e594d6">Glossary</a></li>
+<li><a href="#open-issues:bda80b180ca52303bb2e248407e594d6">Open Issues</a></li>
+</ul>
+</nav>
+    </div>
+  
+
+<p><em>The Configuration Management Process provides the process for identification, approval, coordination and documentation of changes to a system baseline. Among other benefits, the Configuration Management process will help to establish ensure an orderly transition from one software/system/service version to the next, in a way that minimizes resources and disruption for all stakeholders while delivering enhanced capabilities.</em></p>
+
+<h1 id="overview:bda80b180ca52303bb2e248407e594d6">Overview</h1>
+
+<p>It is understood that during any project, changes will be required to existing systems, services, specifications, etc to maintain or augment capabilities. The Configuration Management Process provides the process for identification, approval, coordination and documentation of changes to a system baseline. Among other benefits, the Configuration Management process will help to establish ensure an orderly transition from one software/system/service version to the next, in a way that minimizes resources and disruption for all stakeholders while delivering enhanced capabilities.</p>
+
+<p>The Configuration Management Process strives to be efficient, transparent and not overly complex or burdensome.</p>
+
+<h1 id="scope:bda80b180ca52303bb2e248407e594d6">Scope</h1>
+
+<p>The Configuration Management Process applies to:</p>
+
+<ul>
+<li><p>The IOOS DMAC components, including software tools, systems, specifications, standards, best practices, etc that are listed in the table in Components Under DMAC Change Management.</p></li>
+
+<li><p>Changes that relate to established needs and requirements (rather than major new systems or capabilities).  Specifically, this process applies to changes that:</p>
+
+<ul>
+<li>have minimal impact on other systems not under the authority of IOOS</li>
+<li>are sufficiently well-defined that an adequate solution can be easily identified</li>
+<li>relate to an existing requirement (i.e. is not a significant new capability or project)</li>
+<li>have an available funding source with adequate funds so the change does not need to be part of the annual budget process</li>
+</ul></li>
+</ul>
+
+<h1 id="roles:bda80b180ca52303bb2e248407e594d6">Roles</h1>
+
+<p>Change Management Process roles are described below. Terms of Reference for each component will identify the specific individuals or organizations that fulfill these roles.</p>
+
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>Submitting Authority</strong></td>
+<td>Individuals or organizations that are authorized to submit a Request for Change (RC)</td>
+</tr>
+
+<tr>
+<td><strong>Change Management Analyst</strong></td>
+<td>Team member that analyzes the RC, evaluates the RC against the approval criteria, identifies implementation steps and documents the results of the analysis</td>
+</tr>
+
+<tr>
+<td><strong>Review Board</strong></td>
+<td>Individuals or organizations that rule as to whether the RC is approved or denied</td>
+</tr>
+
+<tr>
+<td><strong>Implementation Team</strong></td>
+<td>Individuals or organizations responsible for executing or implementing approved RCs</td>
+</tr>
+
+<tr>
+<td><strong>Configuration Baseline Owner</strong></td>
+<td>Individuals or organizations that are responsible for maintaining a configuration baseline.</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="change-management-process:bda80b180ca52303bb2e248407e594d6">Change Management Process</h1>
+
+<p>All IOOS DMAC components covered under this plan should have established baselines that are managed by the IOOS Program Office.  Each change to a baseline must be requested via the Change Management Process.  The process is described here in generic terms, specifics related to each component are contained in the Terms of Reference section.</p>
+
+<ol>
+<li><strong>Submit Request</strong> - A Request for Change (RC) is submitted by a designated Submitting Authority</li>
+<li><strong>Review and Analyze</strong> - The Change Management Analyst will review the RC according to the criteria defined in the Scope section and perform an analysis to identify implementation actions required and impacts on related systems and users.  The results of the review will be documented and provided to the Review Board.  Specifics to be documented in the analysis include:
+
+<ul>
+<li>Specific actions required to implement, including estimated cost and schedule</li>
+<li>Impacted systems and interfaces</li>
+<li>Backward compatibility issues, technical dependencies</li>
+<li>Determination if change is optional for related systems</li>
+<li>User impacts</li>
+</ul></li>
+<li><strong>Approve or Deny</strong> - The Review Board will review the analysis provided by the Change Management Analyst and determine whether to approve or deny the request.</li>
+<li><strong>Implement</strong> - Upon approval, the Implementation Team executes the actions required to make the change.</li>
+<li><strong>Update baseline</strong> - Once the RC has been implemented, the Configuration Baseline Owner is responsible for updating the baseline and notifying all stakeholders of the change.</li>
+</ol>
+
+<h1 id="components-under-dmac-change-management:bda80b180ca52303bb2e248407e594d6">Components Under DMAC Change Management</h1>
+
+<p>The DMAC components listed in this section are covered under the Change Management Process.</p>
+
+<h2 id="software-applications-utilities-and-tools:bda80b180ca52303bb2e248407e594d6">Software - Applications, Utilities and Tools</h2>
+
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Baseline Configuration location</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ncSOS - SOS server reference implementation</td>
+<td><a href="https://github.com/asascience-open/ncSOS">https://github.com/asascience-open/ncSOS</a></td>
+</tr>
+
+<tr>
+<td>i52N - SOS server reference implementation</td>
+<td><a href="https://github.com/ioos/i52n-sos">https://github.com/ioos/i52n-sos</a></td>
+</tr>
+
+<tr>
+<td>IOOS Data Catalog</td>
+<td><a href="https://github.com/ioos/catalog">https://github.com/ioos/catalog</a></td>
+</tr>
+
+<tr>
+<td>DMAC Service Registry</td>
+<td></td>
+</tr>
+
+<tr>
+<td>pyoos data collection library</td>
+<td><a href="https://github.com/ioos/pyoos">https://github.com/ioos/pyoos</a></td>
+</tr>
+
+<tr>
+<td>Paegan</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Wicken</td>
+<td><a href="https://github.com/ioos/wicken">https://github.com/ioos/wicken</a></td>
+</tr>
+
+<tr>
+<td>Metamap</td>
+<td><a href="https://github.com/ioos/metamap">https://github.com/ioos/metamap</a></td>
+</tr>
+
+<tr>
+<td>nctoolbox</td>
+<td></td>
+</tr>
+
+<tr>
+<td>sciwms</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UDUnits-PY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Compliance Checker</td>
+<td><a href="https://github.com/ioos/compliance-checker">https://github.com/ioos/compliance-checker</a></td>
+</tr>
+
+<tr>
+<td>SOS Validation Tool</td>
+<td><a href="https://github.com/ioos/ioos-sos-validator">https://github.com/ioos/ioos-sos-validator</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="documents-and-specifications:bda80b180ca52303bb2e248407e594d6">Documents and Specifications</h2>
+
+<table>
+<thead>
+<tr>
+<th>Document/Spec</th>
+<th>Baseline Configuration location</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>IOOS DMAC SOS Milestone 1.0 Service Architecture</td>
+<td>*to be documented</td>
+</tr>
+
+<tr>
+<td>IOOS DMAC Data Provider Service Versions/Configurations</td>
+<td><a href="http://catalog.ioos.us/services/filter/none/SOS">http://catalog.ioos.us/services/filter/none/SOS</a> <br><br> then: <ul><li> Select Service of interest <li> Select Data Access URL <li> Search xml for “softwareVersion”; the line below will identify the <strong>VERSION</strong>, e.g. <code>&lt;gml:version&gt;2.0&lt;/gml:version&gt;</code> </ul> <strong>Note</strong>: <em>this won’t work for services that have not been successfully harvested by the Catalog</em></td>
+</tr>
+
+<tr>
+<td>SOS Milestone 1.0 Encoding Templates</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SOS Web Service Description Document</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Service Registration process</td>
+<td><a href="https://github.com/ioos/registry">https://github.com/ioos/registry</a></td>
+</tr>
+
+<tr>
+<td>CSV-TSV encoding specs</td>
+<td><a href="https://github.com/ioos/ioos-csv-tsv">https://github.com/ioos/ioos-csv-tsv</a></td>
+</tr>
+
+<tr>
+<td>IOOS SOS Compliance Tests</td>
+<td><a href="https://github.com/ioos/ioos-sos-compliance-tests">https://github.com/ioos/ioos-sos-compliance-tests</a></td>
+</tr>
+
+<tr>
+<td>IOOS Convention for Observing Asset Identifiers</td>
+<td><a href="https://github.com/ioos/conventions-for-observing-asset-identifiers">https://github.com/ioos/conventions-for-observing-asset-identifiers</a></td>
+</tr>
+
+<tr>
+<td>Controlled vocabularies</td>
+<td><a href="https://github.com/ioos/vocabularies">https://github.com/ioos/vocabularies</a></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="terms-of-reference-for-components-under-change-management:bda80b180ca52303bb2e248407e594d6">Terms of Reference for Components Under Change Management</h1>
+
+<p>This section contains the specific change management terms and procedures for each component covered under this Change Management process.</p>
+
+<p>The Terms of Reference for each component will define:</p>
+
+<ul>
+<li><strong>Roles</strong> - specific individuals or organizations that will fulfill each role</li>
+<li><strong>Unique process requirements</strong> - identification of any unique processes or process requirements specific to the component as well as the tools or artifacts to be used in the Change Management Process</li>
+</ul>
+
+<h2 id="ioos-data-catalog:bda80b180ca52303bb2e248407e594d6">IOOS Data Catalog</h2>
+
+<h3 id="roles-1:bda80b180ca52303bb2e248407e594d6">Roles</h3>
+
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Individual or Organization</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>Submitting Authority</strong></td>
+<td><ul><li>IOOS Program Office <li>RA DMAC coordinators, other DMAC partners <li>Users (via ‘feedback’ mechanism on Catalog GUI) </ul></td>
+</tr>
+
+<tr>
+<td><strong>Change Management Analyst</strong></td>
+<td>Carmel Ortiz/Alex Birger</td>
+</tr>
+
+<tr>
+<td><strong>Review Board</strong></td>
+<td>Lead: Derrick Snowden</td>
+</tr>
+
+<tr>
+<td><strong>Implementation Team</strong></td>
+<td><ul><li>ASA, NGDC <li>DMAC data providers (potentially)</ul></td>
+</tr>
+
+<tr>
+<td><strong>Configuration Baseline Owner</strong></td>
+<td><ul><li>ASA for Data Catalog <li> NGDC for Service Registry related items </ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="required-tools-and-artifacts:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</h3>
+
+<p>The primary tool to be used for CM for the IOOS Data Catalog is <a href="https://github.com/ioos/catalog">GitHub repository</a>:</p>
+
+<ol>
+<li>Request for Change - Regardless of how the RC originates, it will be logged as a github issue in the catalog repo
+
+<ul>
+<li>Assign the Issue to the Milestone labeled “Requests for Change”</li>
+</ul></li>
+<li>Review and analysis - The results of the review and analysis will be recorded as comments against the Issue.</li>
+<li>Approval/Denial
+
+<ul>
+<li>If approved, the Issue will be moved out of the “Requests for Change” milestone and in to a release Milestone;</li>
+<li>If denied, the Issue will be closed with appropriate notes as to why it was denied.</li>
+</ul></li>
+<li>Implementation
+
+<ul>
+<li>Standard github mechanisms will be used to implement the change;</li>
+<li>Releases should be planned in accordance with semantic versioning practice</li>
+</ul></li>
+<li>Baseline Update - all appropriate documentation and code will be updated on github.</li>
+</ol>
+
+<h2 id="sos-reference-implementations-ncsos-i52n-sos:bda80b180ca52303bb2e248407e594d6">SOS Reference Implementations (ncSOS, i52N SOS)</h2>
+
+<h3 id="roles-2:bda80b180ca52303bb2e248407e594d6">Roles</h3>
+
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Individual or Organization</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>Submitting Authority</strong></td>
+<td><ul><li>IOOS Program Office <li>RA DMAC coordinators, other DMAC partners </ul></td>
+</tr>
+
+<tr>
+<td><strong>Change Management Analyst</strong></td>
+<td>Carmel Ortiz/Alex Birger</td>
+</tr>
+
+<tr>
+<td><strong>Review Board</strong></td>
+<td>Lead: Derrick Snowden</td>
+</tr>
+
+<tr>
+<td><strong>Implementation Team</strong></td>
+<td><ul><li>ASA, Axiom (as appropriate, to make changes to software reference implementations) <li>DMAC data providers (to install/upgrade reference implementation software on their services)</ul></td>
+</tr>
+
+<tr>
+<td><strong>Configuration Baseline Owner</strong></td>
+<td><ul><li>ASA for ncSOS <li> Axiom for i52N <li>DMAC data providers  <li> IOOS Program Office </ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="required-tools-and-artifacts-1:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</h3>
+
+<p>The primary tool to be used for CM for the SOS Reference implementations is github - <a href="#components-under-dmac-change-management">see component github repository list</a>.</p>
+
+<ol>
+<li>Request for Change - Regardless of how the RC originates, it will be logged as a github issue in the appropriate repo
+
+<ul>
+<li>Changes can be new features or bug fixes (regardless they are Issues in github)</li>
+<li>Assign the Issue to the Milestone labeled “Requests for Change”</li>
+</ul></li>
+<li>Review and analysis - The results of the review and analysis will be recorded as comments against the Issue.</li>
+<li>Approval/Denial
+
+<ul>
+<li>If approved, the Issue will be moved out of the “Requests for Change” milestone and in to a release Milestone.</li>
+<li>If denied, the Issue will be closed with appropriate notes as to why it was denied.</li>
+</ul></li>
+<li>Implementation - ncSOS, i52N
+
+<ul>
+<li>The IOOS PO will coordinate with the appropriate vendor (ASA or Axiom) to implement the changes documented in github issues.</li>
+<li>The vendor will implement the changes.</li>
+<li>Standard github mechanisms (branches, commits, releases, etc) will be used to make the changes to the software package(s)</li>
+<li>Testing will be performed by the IOOS PO to validates the changes have been made and the software is functioning as expected</li>
+<li>Releases should be numbered in accordance with semantic versioning practice</li>
+<li>Release notes should be made available on github</li>
+<li>DMAC Data providers
+
+<ul>
+<li>Once the SOS Reference Implementation has been updated and tested, the IOOS PO will coordinate with the RAs, and other data providers if applicable, to have them update their servers to the newest version.</li>
+<li>If Data Providers do not change the service URL, the service will not need to be re-registered in the Service Registry</li>
+</ul></li>
+</ul></li>
+<li>Baseline Updates
+
+<ul>
+<li>SOS Reference Implementation - All appropriate documentation and code for will be updated on github.</li>
+<li>DMAC Data Providers services - upon next successful harvest, the Catalog Services page will reflect the correct SOS Reference Implementation software baseline version installed at the data provider.</li>
+</ul></li>
+</ol>
+
+<h2 id="encoding-templates:bda80b180ca52303bb2e248407e594d6">Encoding Templates</h2>
+
+<h3 id="roles-3:bda80b180ca52303bb2e248407e594d6">Roles</h3>
+
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Individual or Organization</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>Submitting Authority</strong></td>
+<td><ul><li> <li> <li> </ul></td>
+</tr>
+
+<tr>
+<td><strong>Change Management Analyst</strong></td>
+<td>Alex Birger</td>
+</tr>
+
+<tr>
+<td><strong>Review Board</strong></td>
+<td>Lead: Derrick Snowden</td>
+</tr>
+
+<tr>
+<td><strong>Implementation Team</strong></td>
+<td><ul><li> <li></ul></td>
+</tr>
+
+<tr>
+<td><strong>Configuration Baseline Owner</strong></td>
+<td><ul><li> <li>  <li></ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="required-tools-and-artifacts-2:bda80b180ca52303bb2e248407e594d6">Required Tools and Artifacts</h3>
+
+<p>The primary tool to be used for CM</p>
+
+<h1 id="sources:bda80b180ca52303bb2e248407e594d6">Sources</h1>
+
+<ul>
+<li><a href="http://oss-watch.ac.uk/resources/releasemanagement">http://oss-watch.ac.uk/resources/releasemanagement</a></li>
+<li><a href="http://www.nws.noaa.gov/directives/sym/pd01001001curr.pdf">NWS Change Management directive</a></li>
+<li><a href="https://docs.google.com/a/noaa.gov/document/d/1eZqU4WEu921OevuzO5Ac3bTaVl7Z8Ucc7aX0hmVpL-I/edit">O&amp;M planning inputs from AGM Memo</a></li>
+</ul>
+
+<h1 id="glossary:bda80b180ca52303bb2e248407e594d6">Glossary</h1>
+
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Baseline (or Baseline Configuration)</td>
+<td>Information that is used as a starting point by which to compare other information.  In technical systems: the established starting point physical characteristics of a product, service, system or specification.</td>
+</tr>
+
+<tr>
+<td>Change Management</td>
+<td>The process for identification, approval and coordination of changes to a system baseline.</td>
+</tr>
+
+<tr>
+<td>Configuration</td>
+<td>A configuration is the identified and documented functional and physical characteristics of a product, service, system or specification.</td>
+</tr>
+
+<tr>
+<td>Configuration Management</td>
+<td>Tracking of revisions to a component’s baseline (design, configuration, technical specifications, etc).  Configuration management allows you to identify the current baseline for a system.</td>
+</tr>
+
+<tr>
+<td>Release Management</td>
+<td>The process of building, packaging and distributing software for consumption.</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="open-issues:bda80b180ca52303bb2e248407e594d6">Open Issues</h1>
+
+<ol>
+<li>Where to document system baselines?  All on GitHub?</li>
+<li>Can this process be used to help provide justification for O&amp;M expenditures?  How can we use it to educate partners regarding technology stewardship, evolution?</li>
+</ol>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
+

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile"> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      IOOS DMAC CMP Artifacts &middot; IOOS DMAC Configuration Management
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/poole.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/syntax.css">
+  <link rel="stylesheet" href="http://ioos.github.io/configuration-management/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ioos.github.io/configuration-management/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://ioos.github.io/configuration-management/assets/favicon.ico">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ioos.github.io/configuration-management/atom.xml">
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p align="center">&middot; <a href="http://ioos.github.io/" target="_blank">IOOS GitHub Pages</a> &middot; <br>
+	a collection of IOOS documentation and software</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="http://ioos.github.io/configuration-management/">Home</a>
+
+
+  <div class="sidebar-item">
+    <p>Documents</p>
+  </div>
+
+<p style="text-align:right"> 
+    
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/about/">ABOUT: IOOS Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/change_management/">IOOS DMAC Configuration Management Process</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list " href="http://ioos.github.io/configuration-management/config_management_plan/">IOOS DMAC Configuration Management (CM) Plan</a>
+      
+    
+      
+        <a class="sidebar-nav-item-list  active " href="http://ioos.github.io/configuration-management/cmp_artifacts/">IOOS DMAC CMP Artifacts</a>
+      
+    
+</p>
+<p style="text-align:right">
+      
+</p>
+
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management">GitHub repository</a>
+    <a class="sidebar-nav-item" href="https://github.com/ioos/configuration-management/archive/master.zip">Download ZIP</a>
+    <span class="sidebar-nav-item">Currently on master</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>&copy; 1 U.S. IOOS. Rights reserved</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h2 class="masthead-title">
+		  <a href="http://ioos.github.io/configuration-management/" title="Home"> IOOS DMAC Configuration Management &middot; 
+		  <small>Change Process, Plan, Procedures</small>
+		  <img src="http://ioos.github.io/configuration-management/images/ioos_blue2.png" alt="Smiley face" align="right" /></a>
+		  </h2>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">IOOS DMAC CMP Artifacts</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#recommended-configuration:ecf7e8d5c3f65ebb2106256dba7ed90f">RECOMMENDED CONFIGURATION</a>
+<ul>
+<li><a href="#data-server-software:ecf7e8d5c3f65ebb2106256dba7ed90f">Data Server Software</a>
+<ul>
+<li><a href="#service-configuration-and-registration:ecf7e8d5c3f65ebb2106256dba7ed90f">Service Configuration and Registration</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#configuration-baseline:ecf7e8d5c3f65ebb2106256dba7ed90f">CONFIGURATION BASELINE</a></li>
+<li><a href="#available-services-and-datasets:ecf7e8d5c3f65ebb2106256dba7ed90f">AVAILABLE SERVICES AND DATASETS</a>
+<ul>
+<li><a href="#ioos-catalog-dataset-services-counting:ecf7e8d5c3f65ebb2106256dba7ed90f">IOOS Catalog Dataset/Services counting</a></li>
+<li><a href="#asset-inventory:ecf7e8d5c3f65ebb2106256dba7ed90f">Asset Inventory</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+<h1 id="recommended-configuration:ecf7e8d5c3f65ebb2106256dba7ed90f">RECOMMENDED CONFIGURATION</h1>
+
+<p>The table below defines the configuration and processes that should be followed by all IOOS data providers.</p>
+
+<h2 id="data-server-software:ecf7e8d5c3f65ebb2106256dba7ed90f">Data Server Software</h2>
+
+<hr />
+
+<p>Below is the table of data server software and specifications that should be deployed for IOOS data providers.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Data server software</th>
+<th align="left">IOOS Recommended Version</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">i52N SOS</td>
+<td align="left"><a href="https://github.com/ioos/i52n-sos">1.0.0</a></td>
+</tr>
+
+<tr>
+<td align="left">ncSOS</td>
+<td align="left"><a href="https://github.com/asascience-open/ncsos">v1.2</a> for TDS versions 4.5 and 4.6, or <a href="https://github.com/asascience-open/ncsos">v1.1</a></u> for older TDS versions</td>
+</tr>
+
+<tr>
+<td align="left">WMS</td>
+<td align="left">[1.3.0-<a href="http://www.opengeospatial.org/standards/wms][-http://www.opengeospatial.org/standards/wms">http://www.opengeospatial.org/standards/wms][-http://www.opengeospatial.org/standards/wms</a>]</td>
+</tr>
+
+<tr>
+<td align="left">THREDDS</td>
+<td align="left">any version starting with [4.3.16-<a href="http://www.unidata.ucar.edu/blogs/news/entry/netcdf_java_library_and_tds1">http://www.unidata.ucar.edu/blogs/news/entry/netcdf_java_library_and_tds1</a>]; [4.6-<a href="http://www.unidata.ucar.edu/software/thredds/v4.6/tds/UpgradingTo4.5.html">http://www.unidata.ucar.edu/software/thredds/v4.6/tds/UpgradingTo4.5.html</a>] /Java 8 preferred</td>
+</tr>
+
+<tr>
+<td align="left">ERDDAP</td>
+<td align="left">at least [1.62-<a href="http://coastwatch.pfeg.noaa.gov/erddap/download/setup.html];[1.64-http://coastwatch.pfeg.noaa.gov/erddap/download/setup.html]/Java">http://coastwatch.pfeg.noaa.gov/erddap/download/setup.html];[1.64-http://coastwatch.pfeg.noaa.gov/erddap/download/setup.html]/Java</a> 8 preferred</u></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="service-configuration-and-registration:ecf7e8d5c3f65ebb2106256dba7ed90f">Service Configuration and Registration</h3>
+
+<p>There are three options for IOOS data providers for registration of their data services and interface to the IOOS Catalog.</p>
+
+<ol>
+<li><strong>Preferred method:</strong> IOOS data provider establish and run an instance of the OGC Catalog Service (CSW), to allow for federation with other services. There are tw</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>S/W</th>
+<th>Version</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CSW (standard version)</td>
+<td>2.0.2</td>
+</tr>
+
+<tr>
+<td>pyCSW</td>
+<td>4.3</td>
+</tr>
+</tbody>
+</table>
+
+<p>Must have WAF (minimum requirement). Track location – manual.</p>
+
+<p>And/or CSW</p>
+
+<h1 id="configuration-baseline:ecf7e8d5c3f65ebb2106256dba7ed90f">CONFIGURATION BASELINE</h1>
+
+<p>Where does partner config info come from? A) Catalog for Data Server software version, b) Standard spec version, c) Service URLs</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td></td>
+<td><strong>Services/Datasets (Do we just point to Catalog?)</strong></td>
+<td><strong>Assets (from Asset Inventory)</strong></td>
+</tr>
+
+<tr>
+<td><strong>Data Provider</strong></td>
+<td><strong>SOS</strong></td>
+<td><strong>THREDDS</strong></td>
+</tr>
+
+<tr>
+<td>AOOS</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>CeNCOOS</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>CARICOOS</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>More RA’s…</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>NDBC</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>CO-Ops</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>HFR DAC</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>GLIDER DAC</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>ATN</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="available-services-and-datasets:ecf7e8d5c3f65ebb2106256dba7ed90f">AVAILABLE SERVICES AND DATASETS</h1>
+
+<h2 id="ioos-catalog-dataset-services-counting:ecf7e8d5c3f65ebb2106256dba7ed90f">IOOS Catalog Dataset/Services counting</h2>
+
+<ul>
+<li>Luke and Kelly on the API for that.</li>
+</ul>
+
+<h2 id="asset-inventory:ecf7e8d5c3f65ebb2106256dba7ed90f">Asset Inventory</h2>
+
+<ul>
+<li><p>Kathy is working on Mooring Management Plan</p></li>
+
+<li><p>More sources of data for Asset Inventory</p>
+
+<ul>
+<li><p>Catalog (based on registration). Webservice URL downloads from Luke.</p></li>
+
+<li><p>Annual submission by RAs (ground truth for Catalog data)</p></li>
+
+<li><p>John TenHoeve stuff (2 years old)</p></li>
+
+<li><p>???</p></li>
+</ul></li>
+</ul>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
+
