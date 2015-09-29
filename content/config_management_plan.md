@@ -11,7 +11,7 @@ Title = "IOOS DMAC Configuration Management (CM) Plan"
 
 
 
-_This Configuration Management Plan (CM Plan) is a tool used to establish the overall approach for the Configuration Management Process requirements for the DMAC implementation. The scope of this plan extends to software components of the DMAC infrastructure, and includes an accounting of deployed IOOS assets.  The CM Plan is a dynamic compound document, with a static part incorporated herein, and a dynamic part is published as a separate ["IOOS DMAC CMP Artifacts"](/cmp_artifacts/) document._
+_This Configuration Management Plan (CM Plan) is a tool used to establish the overall approach for the Configuration Management Process requirements for the DMAC implementation. The scope of this plan extends to software components of the DMAC infrastructure, and includes an accounting of deployed IOOS assets.  The CM Plan is a dynamic compound document, with a core static part incorporated herein, and a dynamic part is published as a separate ["IOOS DMAC CMP Artifacts"](/cmp_artifacts/) document._
 <!--more-->
 
 
