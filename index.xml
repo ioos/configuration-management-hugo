@@ -555,7 +555,7 @@
           <guid>http://ioos.github.io/configuration-management/config_management_plan/</guid>
           <description>
 
-&lt;p&gt;&lt;em&gt;This Configuration Management Plan (CM Plan) is a tool used to establish the overall approach for the Configuration Management Process requirements for the DMAC implementation. The scope of this plan extends to software components of the DMAC infrastructure, and includes an accounting of deployed IOOS assets.  The CM Plan is a dynamic compound document, with a static part incorporated herein, and a dynamic part is published as a separate &lt;a href=&#34;http://ioos.github.io/configuration-management/cmp_artifacts/&#34;&gt;&amp;ldquo;IOOS DMAC CMP Artifacts&amp;rdquo;&lt;/a&gt; document.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This Configuration Management Plan (CM Plan) is a tool used to establish the overall approach for the Configuration Management Process requirements for the DMAC implementation. The scope of this plan extends to software components of the DMAC infrastructure, and includes an accounting of deployed IOOS assets.  The CM Plan is a dynamic compound document, with a core static part incorporated herein, and a dynamic part is published as a separate &lt;a href=&#34;http://ioos.github.io/configuration-management/cmp_artifacts/&#34;&gt;&amp;ldquo;IOOS DMAC CMP Artifacts&amp;rdquo;&lt;/a&gt; document.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;purpose:aa2af3cf6dbffe932db49cb491ac453b&#34;&gt;Purpose&lt;/h1&gt;
 
@@ -631,6 +631,8 @@
           <author></author>
           <guid>http://ioos.github.io/configuration-management/cmp_artifacts/</guid>
           <description>
+
+&lt;p&gt;&lt;em&gt;While the &lt;a href=&#34;http://ioos.github.io/configuration-management/config_management_plan/&#34;&gt;core of the CM Plan&lt;/a&gt; is intended to be a fairly static description of the CM process, the three artifacts published herein contain the configuration data and are intended to be updated on a more dynamic basis.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;recommended-configuration:ecf7e8d5c3f65ebb2106256dba7ed90f&#34;&gt;RECOMMENDED CONFIGURATION&lt;/h1&gt;
 
