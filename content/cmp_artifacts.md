@@ -7,6 +7,7 @@ Title = "IOOS DMAC CMP Artifacts"
 +++
 
 _While the [core of the CM Plan](/config_management_plan/) is intended to be a fairly static description of the CM process, the three artifacts published herein contain the configuration data and are intended to be updated on a more dynamic basis._
+<!--more-->
 
 # RECOMMENDED CONFIGURATION 
 
