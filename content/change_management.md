@@ -55,8 +55,9 @@ All IOOS DMAC components covered under this plan should have established baselin
 4. **Implement** - Upon approval, the Implementation Team executes the actions required to make the change.
 5. **Update baseline** - Once the RC has been implemented, the Configuration Baseline Owner is responsible for updating the baseline and notifying all stakeholders of the change.
 
+<a name="link1"></a> 
 
-# Components Under DMAC Change Management <a name="components-under-dmac-change-management">&nbsp;</a>
+# Components Under DMAC Change Management 
 
 The DMAC components listed in this section are covered under the Change Management Process.
 
@@ -144,7 +145,7 @@ The primary tool to be used for CM for the IOOS Data Catalog is [GitHub reposito
 
 ### Required Tools and Artifacts
 
-The primary tool to be used for CM for the SOS Reference implementations is github - [see component github repository list](#components-under-dmac-change-management).
+The primary tool to be used for CM for the SOS Reference implementations is github - [see component github repository list](#link1).
 
 1. Request for Change - Regardless of how the RC originates, it will be logged as a github issue in the appropriate repo
   * Changes can be new features or bug fixes (regardless they are Issues in github)
