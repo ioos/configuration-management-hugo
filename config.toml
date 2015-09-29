@@ -1,0 +1,16 @@
+baseurl = "http://ioos.github.io/configuration-management"
+CanonifyUrls = true
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+languageCode = "en-us"
+[params]
+  Title = "IOOS DMAC Configuration Management"
+  Tagline = "Change Process, Plan, Procedures"
+[params.Github]
+  Head = "master"
+  Url = "https://github.com/ioos/configuration-management"
+
+
+	
+ 
