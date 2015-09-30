@@ -9,6 +9,11 @@ Title = "IOOS DMAC CMP Artifacts"
 _While the [core of the CM Plan](/config_management_plan/) is intended to be a fairly static description of the CM process, the three artifacts published herein contain the configuration data and are intended to be updated on a more dynamic basis._
 <!--more-->
 
+
+<p style="color:red; font-size:120%; border:3px solid red; padding:15px;"> DISCLAIMER:<br>For the time being, the CMP Artifacts document must not be considered a guidance of any sort. This is a raw draft; it has been published only to give a work-out to the formatting, and as a placeholder to maintain completeness. <br> Nevertheless, if you have spotted an error you are welcome to report it [here](https://github.com/ioos/configuration-management/issues).</p>
+<br>
+<br>
+
 # RECOMMENDED CONFIGURATION 
 
 The table below defines the configuration and processes that should be followed by all IOOS data providers.
